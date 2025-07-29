@@ -1,6 +1,6 @@
 .calculator-container{
     width: 22vw;
-    height: 60vh;
+    height: 55vh;
     margin: auto;
     position: relative;
     top: 100px;
@@ -48,6 +48,6 @@
 
 @media screen and (max-width: 800px) {
     .calculator-container{
-        width: 90%;
+        width: 88%;
     }
 }
