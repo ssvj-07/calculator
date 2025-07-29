@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="calculator-container">
+        <div class="container-column">
+            <input type="text">
+        </div>
+        <div class="container-column">
+            <button type="button" onclick="clearVal()" style="font-weight: bold;">AC</button>
+            <button type="button" onclick="insertVal('%')"><i class="fa-solid fa-percent"></i></button>
+            <button type="button" onclick="deleteVal()"><i class="fa-solid fa-delete-left"></i></button>
+            <button type="button" onclick="insertVal('/')"><i class="fa-solid fa-divide"></i></button>
+        </div>
+        <div class="container-column">
+            <button type="button" onclick="insertVal('7')"><i class="fa-solid fa-7"></i></button>
+            <button type="button" onclick="insertVal('8')"><i class="fa-solid fa-8"></i></button>
+            <button type="button" onclick="insertVal('9')"><i class="fa-solid fa-9"></i></button>
+            <button type="button" onclick="insertVal('*')"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="container-column">
+            <button type="button" onclick="insertVal('4')"><i class="fa-solid fa-4"></i></button>
+            <button type="button" onclick="insertVal('5')"><i class="fa-solid fa-5"></i></button>
+            <button type="button" onclick="insertVal('6')"><i class="fa-solid fa-6"></i></button>
+            <button type="button" onclick="insertVal('-')"><i class="fa-solid fa-minus"></i></button>
+        </div>
+        <div class="container-column">
+            <button type="button" onclick="insertVal('1')"><i class="fa-solid fa-1"></i></button>
+            <button type="button" onclick="insertVal('2')"><i class="fa-solid fa-2"></i></button>
+            <button type="button" onclick="insertVal('3')"><i class="fa-solid fa-3"></i></button>
+            <button type="button" onclick="insertVal('+')"><i class="fa-solid fa-plus"></i></button>
+        </div>
+        <div class="container-column">
+            <button type="button" onclick="insertVal('00')"><i class="fa-solid fa-0"></i><i class="fa-solid fa-0"></i></button>
+            <button type="button" onclick="insertVal('0')"><i class="fa-solid fa-0"></i></button>
+            <button type="button" onclick="insertVal('.')" style="font-weight: bold; font-size:22px;">.</button>
+            <button type="button" onclick="evaluateVal()" class="equalToo"><i class="fa-solid fa-equals"></i></button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
